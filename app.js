@@ -44,7 +44,6 @@ const makePoll = (data) => {
 
     for (let i = 1; i < renderedOptions[0].children.length; i++) {
         const element = renderedOptions[0].children[i];
-        console.log(element.children[0]);
         element.children[0].addEventListener('click', () => {
             switch (i) {
                 case 1:
@@ -75,7 +74,7 @@ const makePoll = (data) => {
 
     let closePollBtn = renderedPoll.children[1];
     closePollBtn.addEventListener('click', () => {
-        let renderedPoll = renderClosedPolls(question, option1, option2, option3);
+        let renderedPoll = displayAllPolls(question, option1, option2, option3);
         closedPolls.append(renderedPoll);
         resetstate();
     });
@@ -85,7 +84,7 @@ const displayCurrentPoll = (poll) => {
     pollContainer.append(poll);
 };
 
-const renderClosedPolls = (question, option1, option2, option3) => {
+const displayAllPolls = (question, option1, option2, option3) => {
     closedPolls.textContent = '';
     let pollObject = {
         question,
