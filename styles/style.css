@@ -120,11 +120,12 @@ footer {
     margin: 0;
     text-align: center;
     padding: .7em 45%;
+    
 }
 
 .optDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -146,6 +147,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 133px;
+    min-width: 388px;
 }
 
 .box {
@@ -154,4 +157,11 @@ footer {
 
 h3 {
     text-align: center;
+}
+
+.poll-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
