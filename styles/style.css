@@ -89,3 +89,69 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.main-section {
+    display: grid;
+    gap: 1px solid black;
+    grid-template-columns: 1fr 1fr;
+}
+
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    margin: 5px 0;
+    justify-content:center;
+    align-items: center;
+}
+
+#question-input {
+    min-height: 30px;
+    min-width: 300px;
+}
+
+#hr {
+    width: 100%;
+}
+
+#current-poll-container p{
+    margin: 0;
+    text-align: center;
+    padding: .7em 45%;
+}
+
+.optDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.right {
+    grid-column: 2;
+}
+.left {
+    grid-column: 1;
+}
+
+.poll-form {
+    grid-row: 1;
+}
+
+#current-poll-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+h3 {
+    text-align: center;
+}
